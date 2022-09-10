@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_scan"
+            android:icon="@drawable/ic_menu_scan"
+            android:title="@string/navigation_drawer_scan" />
+        <item
+            android:id="@+id/nav_users"
+            android:icon="@drawable/ic_menu_users"
+            android:title="@string/navigation_drawer_users" />
+        <item
+            android:id="@+id/nav_attack"
+            android:icon="@drawable/ic_menu_attack"
+            android:title="@string/navigation_drawer_attack" />
+        <item
+            android:id="@+id/nav_detector"
+            android:icon="@drawable/ic_menu_detector"
+            android:title="@string/navigation_drawer_detector" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_menu_settings"
+            android:title="@string/navigation_drawer_settings" />
+        <item
+            android:id="@+id/nav_info"
+            android:icon="@drawable/ic_menu_info"
+            android:title="@string/navigation_drawer_info" />
+    </group>
+
+    <item android:title="@string/navigation_drawer_group">
+        <menu>
+            <item
+                android:id="@+id/nav_donate"
+                android:icon="@drawable/ic_menu_github"
+                android:title="@string/navigation_drawer_donate" />
+            <item
+                android:id="@+id/nav_github"
+                android:icon="@drawable/ic_menu_github"
+                android:title="@string/navigation_drawer_github" />
+            <item
+                android:id="@+id/nav_discord"
+                android:icon="@drawable/ic_menu_discord"
+                android:title="@string/navigation_drawer_discord" />
+        </menu>
+    </item>
+
+</menu>
